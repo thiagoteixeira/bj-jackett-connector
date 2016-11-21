@@ -137,7 +137,7 @@ public class APIObject {
 
 	public String createJackettURL(ServerConfiguration config) {
 		StringBuilder sb = new StringBuilder();
-		sb.append("http://").append(config.getServer()).append(":").append(config.getPort());
+		sb.append("http://").append(config.getHost()).append(":").append(config.getPort());
 		sb.append("/torznab/bjshare/api?");
 		List<String> params = new ArrayList<>();
 		if (t != null) {
