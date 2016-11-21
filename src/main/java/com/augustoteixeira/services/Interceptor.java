@@ -25,7 +25,7 @@ public class Interceptor {
 	@Autowired
 	private ServerConfiguration config;
 
-	@RequestMapping(value = "/bj-jackett/get/api", method = RequestMethod.GET, produces = "application/rss+xml")
+	@RequestMapping(value = "/bj-share/get/api", method = RequestMethod.GET, produces = "application/rss+xml")
 	@ResponseStatus(HttpStatus.OK)
 	public @ResponseBody String getContent(APIObject obj, HttpServletRequest request, HttpServletResponse response) {
 		System.out.println("Access: " + obj);
@@ -34,7 +34,7 @@ public class Interceptor {
 		System.out.println("URI: "+ uri);
 
 		try {
-			Document document = Jsoup.connect(uri).header("Accept", "application/rss+xml, text/rss+xml, text/xml").get();			
+			Document document = Jsoup.connect(uri).header("Accept", "application/rss+xml, text/rss+xml, text/xml").timeout(20000).get();			
 			String xml = Util.normalizeTexts(document);
 			return xml;
 		} catch (IOException e) {
