@@ -1,4 +1,4 @@
-package com.augustoteixeira;
+package com.augustoteixeira.objects;
 
 import java.util.ArrayList;
 import java.util.List;

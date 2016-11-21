@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.augustoteixeira</groupId>
-	<artifactId>bj-share-interceptor</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<artifactId>bj-jackett-connector</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>war</packaging>
 
-	<name>bj-share-interceptor</name>
+	<name>bj-jackett-connector</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>

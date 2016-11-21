@@ -11,6 +11,9 @@ public class ServerConfiguration {
 	@Value("${torznab.port}")
 	private String port;
 
+	@Value("${torznab.apikey}")
+	private String apikey;
+
 	public String getServer() {
 		return server;
 	}
@@ -25,6 +28,14 @@ public class ServerConfiguration {
 
 	public void setPort(String port) {
 		this.port = port;
+	}
+
+	public String getApikey() {
+		return apikey;
+	}
+
+	public void setApikey(String apikey) {
+		this.apikey = apikey;
 	}
 
 }
