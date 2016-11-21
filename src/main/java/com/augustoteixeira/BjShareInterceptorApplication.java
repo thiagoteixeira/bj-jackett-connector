@@ -24,6 +24,6 @@ public class BjShareInterceptorApplication extends SpringBootServletInitializer 
      */
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(Connector.class);
+        return builder.sources(BjShareInterceptorApplication.class, Connector.class);
     }
 }
