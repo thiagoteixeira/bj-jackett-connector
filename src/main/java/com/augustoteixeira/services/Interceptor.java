@@ -34,7 +34,7 @@ public class Interceptor {
 		System.out.println("URI: "+ uri);
 
 		try {
-			Document document = Jsoup.connect(uri).header("Accept", "application/rss+xml, text/rss+xml, text/xml").timeout(20000).get();			
+			Document document = Jsoup.connect(uri).header("Accept", "application/rss+xml, text/rss+xml, text/xml").timeout(30000).get();			
 			String xml = Util.normalizeTexts(document);
 			return xml;
 		} catch (IOException e) {
