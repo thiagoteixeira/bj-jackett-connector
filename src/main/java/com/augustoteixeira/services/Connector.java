@@ -20,7 +20,7 @@ import com.augustoteixeira.objects.APIObject;
 import com.augustoteixeira.utils.Util;
 
 @RestController
-public class Interceptor {
+public class Connector {
 
 	@Autowired
 	private ServerConfiguration config;

@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
-import com.augustoteixeira.services.Interceptor;
+import com.augustoteixeira.services.Connector;
 
 @SpringBootApplication
 public class BjShareInterceptorApplication extends SpringBootServletInitializer {
@@ -24,6 +24,6 @@ public class BjShareInterceptorApplication extends SpringBootServletInitializer 
      */
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(Interceptor.class);
+        return builder.sources(Connector.class);
     }
 }
