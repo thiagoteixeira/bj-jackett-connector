@@ -29,8 +29,7 @@ public class Connector {
 	@ResponseStatus(HttpStatus.OK)
 	public @ResponseBody String getContent(APIObject obj, HttpServletRequest request, HttpServletResponse response) {
 		System.out.println("Access: " + obj);
-		String uri = obj.createJackettURL(config);
-		
+		String uri = obj.createJackettURL(config);		
 		System.out.println("URI: "+ uri);
 
 		try {
