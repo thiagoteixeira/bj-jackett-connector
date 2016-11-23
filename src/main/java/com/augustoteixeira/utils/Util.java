@@ -18,7 +18,7 @@ public class Util {
 			while (matcher.find()) {
 				String title = matcher.group(1);
 				String newTitle = title.replaceAll("\\s(\\d{4})\\s", "").replaceAll("(?is)full hd", "1080p")
-						.replaceAll("(?is)hd", "720p");
+						.replaceAll("(?is)(hd)(\\s+|])", "720p$2");
 
 				xml = xml.replace(title, newTitle);
 				System.out.println("=======================");
