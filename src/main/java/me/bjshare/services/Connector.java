@@ -1,4 +1,4 @@
-package com.augustoteixeira.services;
+package me.bjshare.services;
 
 import java.io.IOException;
 
@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.augustoteixeira.configuration.ServerConfiguration;
-import com.augustoteixeira.objects.APIObject;
-import com.augustoteixeira.utils.Util;
+import me.bjshare.configuration.ServerConfiguration;
+import me.bjshare.objects.APIObject;
+import me.bjshare.utils.Util;
 
 @RestController
 public class Connector {

@@ -1,10 +1,11 @@
-package com.augustoteixeira.objects;
+package me.bjshare.objects;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.augustoteixeira.configuration.ServerConfiguration;
 import com.google.common.base.Joiner;
+
+import me.bjshare.configuration.ServerConfiguration;
 
 public class APIObject {
 	private String t;

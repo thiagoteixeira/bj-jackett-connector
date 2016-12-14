@@ -1,11 +1,11 @@
-package com.augustoteixeira;
+package me.bjshare;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
-import com.augustoteixeira.services.Connector;
+import me.bjshare.services.Connector;
 
 @SpringBootApplication
 public class BjShareInterceptorApplication extends SpringBootServletInitializer {

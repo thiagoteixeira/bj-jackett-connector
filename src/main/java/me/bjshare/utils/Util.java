@@ -1,4 +1,4 @@
-package com.augustoteixeira.utils;
+package me.bjshare.utils;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
